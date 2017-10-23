@@ -1,0 +1,145 @@
+@import './base.scss';
+.asforus {
+    width: 100%;
+    height: auto;
+    .asforus-container {
+        width: 100%;
+        .first,
+        .third {
+            background: url(../images/asforus_bg1.png) no-repeat center/100%;
+            background-size: cover;
+        }
+        .second {
+            .media-body {
+                background: url(../images/asforus_bg2.png) no-repeat center/100%;
+                background-size: cover;
+            }
+        }
+        .third {
+            .text {
+                margin-top: 9.28% !important;
+                .func-list {
+                    .desc {
+                        width: 84.48%;
+                        font-size: 16px;
+                        color: #212121;
+                        letter-spacing: 0;
+                        line-height: 38px;
+                        font-family: "Microsoft Yahei"
+                    }
+                }
+            }
+        }
+        .first,
+        .second,
+        .third {
+            width: 100%;
+            // height: 625px;
+            .media {
+                width: 100%;
+                height: 100%;
+                font-family: "Microsoft Yahei";
+                .media-left {
+                    padding-right: 0;
+                }
+                .text {
+                    width: 100%;
+                    padding-left: 21.8%;
+                    margin-top: 10.24%;
+                    .media-heading {
+                        font-size: 52px;
+                        color: #4A4A4A;
+                        letter-spacing: 0;
+                        line-height: 58px;
+                        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
+                    }
+                    .info {
+                        margin-top: 20px;
+                        .func {
+                            font-size: 44px;
+                            color: #212121;
+                            letter-spacing: 0;
+                        }
+                        .under-line {
+                            width: 58px;
+                            margin-top: 28px;
+                            border: 2px solid #376FA4;
+                        }
+                        .func-list {
+                            width: 100%;
+                            height: 158px;
+                            // background-color: red;
+                            margin-top: 20px;
+                            // display: flex;
+                            // justify-content: space-between;
+                            // flex-wrap: wrap;
+                            padding-top: 20px;
+                            li {
+                                width: 133px;
+                                margin-right: 61px;
+                                // margin-left: 63px;
+                                margin-top: 20px;
+                                span {
+                                    height: 20px;
+                                    line-height: 20px;
+                                    font-size: 20px;
+                                }
+                                .round {
+                                    display: inline-block;
+                                    width: 16px;
+                                    height: 16px;
+                                    border: 5px solid #E0ECFA;
+                                    background: #376fa4;
+                                    border-radius: 10px;
+                                    margin-right: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .text-right-second {
+                    padding-left: 6.6%;
+                    text-align: left;
+                    .media-heading {
+                        color: #FFFFFF;
+                    }
+                    .info {
+                        .func {
+                            color: #FFFFFF;
+                        }
+                        .under-line {
+                            border-color: #fff;
+                        }
+                        .func-list {
+                            width: 86.9%;
+                            color: #fff;
+                            .round {
+                                background: #E0ECFA !important;
+                                border-color: #5484B1 !important;
+                            }
+                        }
+                    }
+                }
+                .pic {
+                    width: 43.5%;
+                    height: 100%;
+                    padding-left: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .forth {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+            img {
+                // margin-top: -3px;
+                padding: 0;
+                // height: 100%;
+                width: 100%
+            }
+        }
+    }
+}

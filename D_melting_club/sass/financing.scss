@@ -1,0 +1,102 @@
+@import './base.scss';
+.Multi-productions {
+    margin-top: 48px;
+    width: 100%;
+    .panel-width {
+        .introSeverices {
+            box-shadow: 0 2px 14px 0 rgba(55, 111, 164, 0.15);
+            li {
+                font-size: 18px;
+                letter-spacing: 1px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                box-shadow: 0 2px 14px 0 rgba(55, 111, 164, 0.15);
+                font-family: "Microsoft Yahei";
+                color: #4a4a4a;
+                // font-weight: 800;
+            }
+            li.active {
+                box-shadow: 0 -5px 12px 0 rgba(55, 111, 164, 0.15);
+                color: #376fa4;
+                background-color: #fff;
+            }
+            .fanancing-hostipal,
+            .fanancing-agency,
+            .fanancing-manufacturer {
+                width: 100%;
+                height: auto;
+                // padding-bottom: 64px;
+                padding: 0 48px 64px;
+                .textandpic {
+                    width: 1104px;
+                    height: 298px;
+                    margin: 48px auto 0 auto;
+                    // background: #FFFFFF;
+                    // background: url(../images/bg-center.png) no-repeat center/100%;
+                    background: url(../images/bg_right.png) no-repeat center/100%;
+                    box-shadow: 0 2px 14px 0 rgba(55, 111, 164, 0.15);
+                    .media {
+                        width: 100%;
+                        height: 100%;
+                        .media-right {
+                            padding-left: 0;
+                        }
+                    }
+                    .text {
+                        // width: 60%;
+                        height: 100%;
+                        padding: 39px 84px;
+                        font-family: "Microsoft Yahei";
+                        .media-heading {
+                            font-size: 18px;
+                            color: #212121;
+                            letter-spacing: 0;
+                            height: 25px;
+                            line-height: 25px;
+                            font-weight: 900;
+                        }
+                        .info {
+                            font-size: 16px;
+                            color: #212121;
+                            letter-spacing: 0;
+                            line-height: 38px;
+                        }
+                    }
+                }
+                .second {
+                    background: url(../images/bg_left.png) no-repeat center/100%;
+                }
+            }
+        }
+        .advanced {
+            margin-top: 64px;
+            width: 100%;
+            height: 328px;
+            // background-color: red;
+            // padding-top: 48px;background: #FFFFFF;
+            box-shadow: 0 2px 14px 0 rgba(55, 111, 164, 0.15);
+            background: url(../images/advantage.png) no-repeat center/100%;
+        }
+        .applyProcess {
+            margin-top: 64px;
+            width: 100%;
+            height: 429px;
+            box-shadow: 0 2px 14px 0 rgba(55, 111, 164, 0.15);
+            background: url(../images/process.png) no-repeat center/100%;
+        }
+        .btn-APP {
+            width: 165px;
+            margin: 32px auto 0 auto;
+        }
+    }
+    .footer-intro {
+        width: 100%;
+        height: auto;
+        margin-top: 64px;
+        // background: url(../images/service.png) no-repeat center/100%;
+        img {
+            width: 100%;
+        }
+    }
+}
