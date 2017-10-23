@@ -18,6 +18,9 @@
 
     app.controller("home", ["$scope", function($scope) {
         $('.header').show();
+        $('.carousel').carousel({
+            interval: 1500
+        })
         $scope.data = {
             current: "1" // 1代表张三，2代表李四，3代表王五
         };

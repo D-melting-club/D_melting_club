@@ -194,7 +194,7 @@ body {
   line-height: 25px;
   height: 25px;
   font-size: 18px;
-  color: #376FA4;
+  color: rgba(255, 255, 255, 0.4);
   letter-spacing: 0;
   margin-top: 10px;
 }
@@ -203,6 +203,10 @@ body {
   display: inline-block;
   margin-left: 40px;
   float: left;
+}
+
+.footer .links .links-list .item:first-child {
+  color: #376fa4;
 }
 
 .footer .copyRight {

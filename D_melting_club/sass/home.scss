@@ -93,6 +93,13 @@
                     }
                     a:hover {
                         text-decoration: none;
+                        // pointer-events: none;
+                    }
+                    a>span {
+                        line-height: 18px;
+                    }
+                    a>span:hover {
+                        text-decoration: none;
                     }
                 }
                 .work-nav-item.active {
@@ -100,6 +107,9 @@
                     // #current {
                     span {
                         color: #FFFFFF;
+                    }
+                    span:hover {
+                        text-decoration: none;
                     }
                     img:nth-child(1) {
                         display: none;
@@ -151,16 +161,23 @@
                             line-height: 25px;
                             text-align: left;
                         }
-                        a {
+                        .checkInfo {
                             display: block;
                             width: 122px;
                             height: 36px;
                             line-height: 36px;
                             font-family: "Microsoft Yahei";
                             text-align: center;
-                            background: #376FA4;
                             border-radius: 3px;
                             margin: 24px auto 0 auto;
+                            background: rgba(255, 255, 255, 0.25);
+                            border: 1px solid #FCFEFF;
+                            color: #fff;
+                        }
+                        .checkInfo:hover {
+                            background: #376FA4;
+                            color: #fff;
+                            border: none;
                         }
                     }
                 }

@@ -148,7 +148,7 @@ body {
 .asforus .asforus-container .first .media .text .info .func-list,
 .asforus .asforus-container .second .media .text .info .func-list,
 .asforus .asforus-container .third .media .text .info .func-list {
-  width: 100%;
+  width: 91%;
   height: 158px;
   margin-top: 20px;
   padding-top: 20px;
@@ -210,7 +210,7 @@ body {
 .asforus .asforus-container .first .media .text-right-second .info .func-list,
 .asforus .asforus-container .second .media .text-right-second .info .func-list,
 .asforus .asforus-container .third .media .text-right-second .info .func-list {
-  width: 86.9%;
+  width: 73.9%;
   color: #fff;
 }
 

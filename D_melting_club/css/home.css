@@ -132,12 +132,24 @@ body {
   text-decoration: none;
 }
 
+.text .works .work-nav .work-nav-list .work-nav-item a > span {
+  line-height: 18px;
+}
+
+.text .works .work-nav .work-nav-list .work-nav-item a > span:hover {
+  text-decoration: none;
+}
+
 .text .works .work-nav .work-nav-list .work-nav-item.active {
   background-color: #376fa4;
 }
 
 .text .works .work-nav .work-nav-list .work-nav-item.active span {
   color: #FFFFFF;
+}
+
+.text .works .work-nav .work-nav-list .work-nav-item.active span:hover {
+  text-decoration: none;
 }
 
 .text .works .work-nav .work-nav-list .work-nav-item.active img:nth-child(1) {
@@ -197,18 +209,28 @@ body {
   text-align: left;
 }
 
-.text .works .work-nav .work-messages .message-lists-one .list-item a,
-.text .works .work-nav .work-messages .message-lists-second .list-item a,
-.text .works .work-nav .work-messages .message-lists-third .list-item a {
+.text .works .work-nav .work-messages .message-lists-one .list-item .checkInfo,
+.text .works .work-nav .work-messages .message-lists-second .list-item .checkInfo,
+.text .works .work-nav .work-messages .message-lists-third .list-item .checkInfo {
   display: block;
   width: 122px;
   height: 36px;
   line-height: 36px;
   font-family: "Microsoft Yahei";
   text-align: center;
-  background: #376FA4;
   border-radius: 3px;
   margin: 24px auto 0 auto;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #FCFEFF;
+  color: #fff;
+}
+
+.text .works .work-nav .work-messages .message-lists-one .list-item .checkInfo:hover,
+.text .works .work-nav .work-messages .message-lists-second .list-item .checkInfo:hover,
+.text .works .work-nav .work-messages .message-lists-third .list-item .checkInfo:hover {
+  background: #376FA4;
+  color: #fff;
+  border: none;
 }
 
 .text .works .work-nav .work-messages .message-lists-one .list-item:first-child {

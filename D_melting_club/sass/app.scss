@@ -135,13 +135,16 @@
             line-height: 25px;
             height: 25px;
             font-size: 18px;
-            color: #376FA4;
+            color: rgba(255, 255, 255, 0.40);
             letter-spacing: 0;
             margin-top: 10px;
             .item {
                 display: inline-block;
                 margin-left: 40px;
                 float: left;
+            }
+            .item:first-child {
+                color: #376fa4;
             }
         }
     }

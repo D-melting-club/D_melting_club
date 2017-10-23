@@ -15,13 +15,6 @@
     }]);
 
 
-
-    // app.config(["$routeProvider", function($routeProvider) {
-    //     $routeProvider.when("/details/:id", {
-    //         templateUrl: "./details/details.html",
-    //         controller: "financingCtro"
-    //     });
-    // }]);
     app.controller("trouble", ["$scope", function($scope) {
 
         $('.header').show();
