@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta content="email=no" name="format-detection" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>渡众产品项目详情</title>
+        <link href="https://cdn.bootcss.com/Swiper/4.0.0-beta.2/css/swiper.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css" media="all" />
+        <script type="text/javascript"></script>
+        <script>
+            var vScale = window.screen.width / 750;
+            document.getElementById('viewport').setAttribute('content', 'target-densitydpi=device-dpi, width=750, user-scalable=no, minimum-scale=' + vScale + ', maximum-scale=' + vScale + ' initial-scale=' + vScale);
+            if ( window.screen.width / window.screen.height > 405/720 ){
+            document.querySelector("html").classList.add("sony");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="common">
+            <div class="common-logo">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/Group.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Group.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Group.png">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+            </div>
+            <div class="common-zt">
+            	<h4>深圳大创客网络科技有限公司</h4>
+            	<p>按呗，是深圳大创客网络科技有限公司旗下基于共享经济概念所运营的共享按摩椅项目，以“按一按 放松一下“ 为理念打造的即时性健康消费平台，将按摩椅覆盖到影院、机场、商超、写字楼、酒店等各类消费场景，微信扫码支付，一键享用，为用户提供舒缓按摩、充电、智能3D立体音乐等服务。未来，按呗将基于按摩椅所覆盖的空间，产品接入健康、VR、互动消费等领域，为用户提供基于健康、娱乐、消费为一体的立体体验空间。</p>
+            </div>
+        </div>
+        <script src="https://cdn.bootcss.com/Swiper/4.0.0-beta.2/js/swiper.min.js"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+		        pagination:'.swiper-pagination',
+		        loop:true,
+		        autoplay:3000,
+		        autoplayDisableOnInteraction:true
+			});
+		</script>
+    </body>
+</html>

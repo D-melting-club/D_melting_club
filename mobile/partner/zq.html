@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta content="email=no" name="format-detection" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>敬请期待</title>
+        <link rel="stylesheet" href="css/common.css" media="all" />
+        <script>
+            var vScale = window.screen.width / 750;
+            document.getElementById('viewport').setAttribute('content', 'target-densitydpi=device-dpi, width=750, user-scalable=no, minimum-scale=' + vScale + ', maximum-scale=' + vScale + ' initial-scale=' + vScale);
+            if ( window.screen.width / window.screen.height > 405/720 ){
+            document.querySelector("html").classList.add("sony");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="qd"></div>
+    </body>
+</html>

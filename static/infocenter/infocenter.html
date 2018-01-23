@@ -1,0 +1,112 @@
+<link rel="stylesheet" href="./css/infocenter.css">
+
+<div class="infocenter">
+    <div class="info-head">
+        <div class="info-width">
+            <div class="info-nav">
+                <span>信息中心</span>
+                <a href="#/home/1"> <button type="button" class="btn btn-primary btn-lg">返回首页</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="info-container">
+        <div class="info-width">
+            <div class="info-list">
+                <div class="left">
+                    <ul class="list-group">
+                        <li class="list-groups-item">信息中心</li>
+                        <li class="list-groups-item " ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)">融资业务</li>
+                        <li class="list-groups-item" ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)">关于我们</li>
+                        <!--<li class="list-groups-item">新手指引</li>-->
+                        <li class="list-groups-item" ng-class="{ 'active' : data.current == 3 }" ng-click="actions.setCurrent(3)">常见问题</li>
+                        <li class="list-groups-item n" ng-class="{ 'active' : data.current == 4 }" ng-click="actions.setCurrent(4)">网站公告</li>
+                        <li class="list-groups-item" ng-class="{ 'active' : data.current == 5 }" ng-click="actions.setCurrent(5)">联系我们</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="financing  bgc " ng-show="data.current == 1">
+                        <div ng-show="parentFinancing">
+                            <h5>融资业务</h5>
+                            <ul class="list ">
+                                <li class="list-item "><span>·</span>&nbsp;&nbsp;<span ng-click="showFinancing.setCurrent(0)">什么是融资租赁(设备直租)？</span></li>
+                                <li class="list-item"><span>·</span>&nbsp;&nbsp;<span ng-click="showFinancing.setCurrent(1)">什么是融资租赁(售后回租)？</span></li>
+                                <li class="list-item"><span>·</span>&nbsp;&nbsp;<span ng-click="showFinancing.setCurrent(2)">什么是医疗采购贷(应收账款质押)？</span></li>
+                                <li class="list-item"><span>·</span>&nbsp;&nbsp;<span ng-click="showFinancing.setCurrent(3)">什么是应收账款保理？</span></li>
+                            </ul>
+                        </div>
+                        <div class="children-one" ng-repeat="item in financing" ng-show='isFinancing=={{$index}}'>
+                            <h5><span>融资业务></span>{{item.title}}</h5>
+                            <div class="text">
+                                <h3>{{item.title}}</h3>
+                                <div class="text-container">
+                                    <p>{{item.text1}}</p>
+                                    <p>{{item.text2}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asforus  bgc " ng-show="data.current == 2">
+                        <h5>关于我们</h5>
+                        <div class="text">
+                            <h3>关于我们</h3>
+                            <div class="text-container">
+                                <p> 深圳渡众创业投资有限公司是专业从事医疗行业供应链金融信息服务的投资机构。业务涵盖股权投资(创业投资、并购投资、产业投资)和孵化投资(创展谷孵化器)。渡众主要投资于医疗及大健康领域，包括互联网金融、大健康、生物工程、医疗器械和新制造；专注和擅长于三高模式(高科技、高成长、高毛利和新模式)的投资项目。
+                                </p>
+                                <p>医融社是深圳渡众创业投资有限公司旗下子品牌，主要业务是为医疗领域提供全供应链金融服务。医融社是一个以社群经济为核心来打造的全开放共享平台，业务领域涵盖共享金融、共享产品、共享人才、共享投资等服务。我们秉承创造价值、分享价值的服务理念，致力于为医疗领域的每一位从业者服务。
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="guide bgc">
+                    </div>-->
+                    <div class="trouble  bgc " ng-show="data.current == 3">
+                        <div ng-show="parentTrouble">
+                            <h5>常见问题</h5>
+                            <ul class="list">
+                                <li class="list-item" ng-click="showTrouble.setCurrent(0)"><span>·</span>&nbsp;&nbsp;怎么成为医融社的会员？需要什么条件？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(1)"><span>·</span>&nbsp;&nbsp;注册用户过程对于昵称、登录密码有何要求？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(2)"><span>·</span>&nbsp;&nbsp;如何登录医融社？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(3)"><span>·</span>&nbsp;&nbsp;获取验证码短信失败怎么办？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(4)"><span>·</span>&nbsp;&nbsp;如何申请融资？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(5)"><span>·</span>&nbsp;&nbsp;融资流程是怎么样的？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(6)"><span>·</span>&nbsp;&nbsp;医融社申请审核时间多久？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(7)"><span>·</span>&nbsp;&nbsp;医融社能贷多少金额？</li>
+                                <li class="list-item" ng-click="showTrouble.setCurrent(8)"><span>·</span>&nbsp;&nbsp;如果有平台上无法满足的需求如何处理？</li>
+                            </ul>
+                        </div>
+                        <div class="children-one tro" ng-repeat="item in trouble" ng-show='isTrouble=={{$index}}'>
+                            <h5><span>常见问题></span>{{item.title}}</h5>
+                            <div class="text">
+                                <h3>{{item.title}}</h3>
+                                <div class="text-container">
+                                    <p>{{item.text}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="siteNotice bgc " ng-show="data.current == 4">
+                        <h5>网站公告</h5>
+                        <ul class="list">
+                            <li class="list-item"><span>·</span>&nbsp;&nbsp;【网站公告】：关于医融社平台服务升级的通知</li>
+                        </ul>
+                    </div>
+                    <div class="contactus bgc" ng-show="data.current == 5">
+                        <h5>联系我们</h5>
+                        <div class="text">
+                            <h3>联系我们</h3>
+                            <div class="text-container">
+                                <p>服务热线：&nbsp;0755-26659557</p>
+                                <p> 公司邮箱：&nbsp;duzvp@51dzct.com</p>
+                                <p>公司地址：&nbsp;广东省深圳市南山区粤海街道东滨路荔源广场B座1208室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

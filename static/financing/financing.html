@@ -1,0 +1,165 @@
+<!--<link rel="stylesheet" type="css/text" href="./css/financing.css">-->
+<link rel="stylesheet" type="text/css" href="./css/financing.css">
+<!--产品多样开始-->
+<div class="Multi-productions">
+    <div class="panel-width">
+        <div class="header-title">
+            产品多样
+        </div>
+        <div class="bottomline"></div>
+        <div class="introSeverices">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)">医院</li>
+                <li role="presentation" ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)">经销商</li>
+                <li role="presentation" ng-class="{ 'active' : data.current == 3 }" ng-click="actions.setCurrent(3)">生产厂家</li>
+            </ul>
+            <div class="fanancing-hostipal" ng-show="data.current == 1">
+                <div class="first textandpic">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_1.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="text">
+                                <h4 class="media-heading">融资租赁(设备直租)</h4>
+                                <div class="info">
+                                    采购融资一体化，缓解资金压力。</br> 由渡众创业合作平台（以下简称“医融社平台”）提供的资金方出资购进客户所选定的设备，客户取得相关设备的使用权和收益权、并分期支付租金。租赁期满时，客户可根据合同约定的设备留购价格取得设备所有权。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second textandpic">
+                    <div class="media">
+                        <div class="media-body media-left">
+                            <div class="text">
+                                <h4 class="media-heading">融资租赁(售后回租)</h4>
+                                <div class="info">
+                                    融资渠道多元化，盘活自有资产。</br>
+                                    客户将自有设备的所有权转让给医融社平台以获得资金，在双方签署的售后回租合同项下，客户拥有标的设备的使用权和收益权、并分期支付租金。租赁期满时，客户可根据合同约定的设备留购价格重新获取设备所有权。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_2.png" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third textandpic">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_3.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="text">
+                                <h4 class="media-heading">应收账款保理</h4>
+                                <div class="info">
+                                    提前回收医保款，平移医院现金流。</br>
+                                    债权人（例：医疗机构）将其在医保方向的应收账款转让给医融社创业合作伙伴或关联公司，提前收回医保应收款项。此后，医融社平台根据约定的还款节点向债务人（例：医保中心）回收该笔账款。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fanancing-agency" ng-show="data.current == 2">
+                <div class="first textandpic">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_4.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="text">
+                                <h4 class="media-heading">应收账款保理</h4>
+                                <div class="info">
+                                    加快债权人的账款回收，缓解债务人的支出压力。</br>
+                                    债权人（例：医疗机构的供应商）将其现在或将来、基于其与债务人（例：医疗机构）订立的货物销售或服务合同而产生的应收账款转让给医融社平台（保理商），从而提前收回款项。此后，医融社平台根据约定的还款节点向债务人回收该笔账款。 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second textandpic">
+                    <div class="media">
+                        <div class="media-body media-left">
+                            <div class="text ">
+                                <h4 class="media-heading">医疗采购贷(应付账款质押)</h4>
+                                <div class="info">
+                                    增加债权人的资金流动性。</br>
+                                    医疗经销机构供应商通过目前中标过的医疗产品标的，根据经销机构的上下游采购合同确定应付的进货款，通过医融社平台获取对应的个人及公司授信，完成进货行为，在账期结束前偿还进货款。 </div>
+                            </div>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_5.png" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fanancing-manufacturer " ng-show="data.current == 3">
+                <div class="first textandpic">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_6.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body media-right">
+                            <div class="text">
+                                <h4 class="media-heading">应收账款保理</h4>
+                                <div class="info">
+                                    加快债权人的账款回收，缓解债务人的支出压力。</br>
+                                    债权人（例：医疗机构的供应商）将其现在或将来、基于其与债务人（例：分销医疗设备经销商）订立的货物销售或服务合同而产生的应收账款转让给医融社平台（保理商），从而提前收回款项。此后，医融社创业合作伙伴平台根据约定的还款节点向债务人回收该笔账款。 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second textandpic">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="text media-left">
+                                <h4 class="media-heading">医疗采购贷(应付账款质押)</h4>
+                                <div class="info">
+                                    增加债权人的资金流动性。</br>
+                                    医疗设备生产厂商通过目前签订的分销商的生产订单，根据经销机构的上下游采购合同确定应付的进货款，通过渡众创业合作平台获取对应的个人及公司授信，完成进货行为，在账期结束前偿还进货款。 </div>
+                            </div>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a href="javascript:void(0);">
+                                <img class="media-object" src="./images/pic_content_7.png" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="advanced">
+
+        </div>
+        <div class="applyProcess" id="process">
+
+        </div>
+        <!-- Single button -->
+        <a class="btn-APP" href="#asforus/app">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               立即下载APP申请融资 
+                     </button>
+        </a>
+    </div>
+    <div class="footer-intro">
+        <img src="./images/service.png" alt="">
+    </div>
+</div>
+<!--产品多样结束-->

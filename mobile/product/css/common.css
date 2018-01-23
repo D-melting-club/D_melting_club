@@ -1,0 +1,176 @@
+/* CSS reset */
+
+
+/*
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    html {
+       
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+       
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 30px !important;
+    }
+}*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    color: #757575;
+    font-family: PingFangSC-Regular, microsoft yahei;
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form {
+    margin: 0;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.common {
+    width: 100%
+}
+
+.common-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.common-zt {
+    padding-top: 35px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.common-zt h4 {
+    font-size: 32px;
+    color: #212121;
+    letter-spacing: 0;
+}
+
+.common-zt h4:before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+    background: #212121;
+    margin-right: 10px;
+    border-radius: 25%;
+}
+
+.common-zt p {
+    font-size: 28px;
+    color: #757575;
+    letter-spacing: 0;
+    padding-top: 20px;
+}

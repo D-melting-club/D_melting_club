@@ -1,0 +1,486 @@
+/* CSS reset */
+
+@media only screen and (min-width: 320px) {
+    html {
+        /*font-size: 25px !important;*/
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    html {
+        /*font-size: 26.75px !important;*/
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+        /*font-size: 26.75px !important;*/
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 30px !important;
+    }
+}
+
+.mui-android {
+    height: auto;
+    /*margin-top: 25rem auto !important;*/
+}
+
+html {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*min-height: 100%;*/
+}
+
+body {
+    line-height: 1.5rem;
+    color: #333;
+    font-family: arial, microsoft yahei;
+    font-size: 1.25rem;
+    background-color: transparent;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background: url(../img/signup_bg.jpg) no-repeat;
+    background-size: cover;
+    /*min-height: 100%;*/
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    /*border: 0;
+    background: 0 0;
+    -webkit-appearance: none;
+    outline: 0;、*/
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form {
+    margin: 0;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a,
+img,
+button,
+input,
+textarea {
+    /*-webkit-tap-highlight-color: rgba(255, 255, 255, 0);*/
+}
+
+
+/* loading */
+
+#ns_loading {
+    width: 8rem;
+    background-color: rgba(0, 0, 0, .5);
+    height: 8rem;
+    border-radius: .5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    z-index: 99;
+    -webkit-animation: smalljump .3s;
+    animation: smalljump .3s;
+}
+
+#ns_loading_i {
+    width: 3rem;
+    height: 3rem;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    -webkit-animation: load_rotation 1s ease-in-out infinite;
+    animation: load_rotation 1s ease-in-out infinite;
+    margin: 1rem auto;
+    position: relative;
+}
+
+#ns_loading_i::after {
+    width: .5rem;
+    height: .5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+#ns_loading_p {
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    max-width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* alert */
+
+#ns_alert {
+    position: fixed;
+    z-index: 99;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    display: none;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    -webkit-animation: smalljump .3s;
+    animation: smalljump .3s;
+}
+
+#ns_alert_txt {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    float: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: .5rem;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    display: none;
+    right: 0;
+    margin: auto;
+    max-width: 1080px;
+    min-width: 320px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: '';
+}
+
+.dz-bg {
+    width: 100%;
+    height: auto;
+}
+
+.dz-bg {
+    /*padding-top: 25.5rem;*/
+    margin: 1.4rem auto 0 auto;
+    /*margin: 0 auto;*/
+}
+
+.invite-logo {
+    width: 91.6%;
+    margin: 3.8rem auto 0 auto;
+}
+
+.invite-logo img {
+    width: 100%;
+}
+
+.dz-bg-zt {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5rem;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.dz-bg-input {
+    /*width: 6.42rem;*/
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dz-bg-input li {
+    list-style: none;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.3rem;
+    height: 3.6rem;
+    border-radius: 0.45rem;
+    position: relative;
+    box-shadow: inset 1px 0 3px 0 rgba(255, 107, 0, 0.25);
+    border-radius: 3px;
+}
+
+.dz-bg-input li .icons-box {
+    float: left;
+    width: 3.6rem;
+    height: 100%;
+    /*padding: 50%;*/
+    /*兼容性的上下左右居中*/
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.dz-bg-input li .icons-box img {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-top: 0.3rem;
+    margin-left: 0.1rem;
+}
+
+
+/*兼容性的上下左右居中*/
+
+.dz-bg-input li .input-blank {
+    height: 100%;
+    width: 80%;
+    padding: .50rem 0;
+    box-sizing: border-box;
+    float: left;
+    /*display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;*/
+}
+
+.dz-bg-input li input {
+    width: 100%;
+    float: right;
+    border: none;
+    height: 2.6rem;
+    /*line-height: 2.6rem;*/
+    line-height: normal;
+    margin-bottom: 0;
+    border-left: .1rem dashed #9B9B9B;
+    padding: 0 0 0 1rem;
+    /*margin-top: .1rem;*/
+    font-size: 1.2rem;
+    color: #666;
+    border-radius: 0;
+}
+
+.dz-bg-input li input.yzm {
+    width: 7.0rem;
+    position: absolute;
+    height: 100%;
+    background: #FF6B00;
+    font-size: 1.2rem;
+    /*color: #652B00;*/
+    color: #fff;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    border-left: 0;
+    outline: none;
+    padding: 0;
+}
+
+.dz-bg-input li input.mail {
+    width: 15.60rem;
+    float: left;
+}
+
+.dz-bg-btn {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8rem;
+    height: 5.2rem;
+}
+
+.dz-bg-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.dz-bg-btn a img {
+    width: 100%;
+    height: 100%
+}
+
+.dz-fix {
+    width: 100%;
+    height: 3.24rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .3;
+    padding-top: 0.4rem;
+    padding-left: 0.6rem;
+}
+
+.dz-fix-gb {
+    width: 2.24rem;
+    height: 2.24rem;
+    float: left;
+    background: url(../img/gb.png);
+    background-size: cover;
+}
+
+.dz-fix-zt {
+    font-size: 1.28rem;
+    font-family: "PingFangSC-Regular";
+    color: #F4F4F4;
+    letter-spacing: 0;
+    height: 2.24rem;
+    float: left;
+    line-height: 2.24rem;
+}
+
+.dz-fix-down {
+    width: 4.12rem;
+    height: 2.44rem;
+    /*margin-top: .15rem;*/
+    float: left;
+}
+
+.dz-fix-down a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: .4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #652B00;
+    line-height: 2.44rem;
+}
+
+.dz-fix1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 101;
+}
+
+.dz-fix2 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 100%;
+    height: 25.5rem;
+    z-index: 102;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* IE 9 */
+    -moz-transform: translate(-50%, -50%);
+    /* Firefox */
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari 和 Chrome */
+    -o-transform: translate(-50%, -50%);
+    /* Opera */
+}
+
+.dz-fix2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.dz-fix3 {
+    width: 2.44rem;
+    height: 2.44rem;
+    position: absolute;
+    right: .2rem;
+    top: .1rem;
+    z-index: 102;
+    background: url(../img/bg1.png);
+    background-size: cover;
+}
+
+.dz-fix3 img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="./css/news.css">
+
+<div class='news'>
+    <h2>渡众创投：不负众望，深耕细作，助力中非医疗产业合作</h2>
+    <h5>2017/11/08</h5>
+    <div class="newstext" ng-repeat="item in news">
+        <p class="textheader">{{item.text}}<span></span></p>
+        <img ng-src="{{item.imgSrc}}" alt="">
+        <h5>{{item.imgTitle}}</h5>
+    </div>
+    <div class="newstext" ng-repeat="item in news2">
+        <h3>{{item.title}}</h3>
+        <div class="textheader">
+            <p class="">{{item.text1}}<span></span></p>
+            <p class="">{{item.text2}}<span></span></p>
+        </div>
+        <img ng-src="{{item.imgSrc}}" alt="">
+        <h5>{{item.imgTitle}}</h5>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="email=no" name="format-detection" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>邀请好友--注册</title>
+    <link rel="stylesheet" type="text/css" href="js/lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css" media="all" />
+    <script type="text/javascript" src="js/lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/mui/js/mui.min.js"></script>
+    <script type="text/javascript">
+        var vScale = window.innerWidth / 320;
+        document.getElementById('viewport').setAttribute('content', 'target-densitydpi=device-dpi, width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1, initial-scale=' + vScale);
+        document.body.addEventListener('touchmove', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            document.body.style.height = '100%';
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+</head>
+
+<body>
+    <div class='invite-logo'>
+        <img src="img/invite-logo.png" alt="">
+    </div>
+    <div class="dz-bg">
+
+        <div class="dz-bg-input">
+            <ul>
+                <li class="clearfix">
+                    <div class="icons-box">
+                        <img src="img/ren.png">
+                    </div>
+                    <div class='input-blank'>
+                        <input type="text" name="nc" id="nc" placeholder="请创建昵称">
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="icons-box">
+                        <img src="img/iphone.png">
+                    </div>
+                    <div class='input-blank'>
+                        <input type="text" name="iphone" id="iphone" placeholder="请输入手机号">
+                    </div>
+
+                </li>
+                <li class="clearfix">
+                    <div class="icons-box">
+                        <img src="img/mail.png">
+                    </div>
+                    <div class='input-blank'>
+                        <input type="text" name="mail" id="mail" class="mail" placeholder="请输入验证码">
+                    </div>
+                    <input type="button" value="获取验证码" class="yzm" id="yzm">
+                </li>
+            </ul>
+        </div>
+        <div class="dz-bg-zt">保荐人:<span id="jr"></span></div>
+        <div class="dz-bg-btn">
+            <a href="javascript:void(0);">
+                <img src="img/btn.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="dz-fix1 hide"></div>
+    <div class="dz-fix2 hide">
+        <a href="https://xz.2bai.org/16972891">
+            <img src="img/dowmloadapp_alert.png">
+        </a>
+    </div>
+    <div class="dz-fix3 hide "></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
